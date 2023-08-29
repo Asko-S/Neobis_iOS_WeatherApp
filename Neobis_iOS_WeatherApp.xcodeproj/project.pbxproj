@@ -13,6 +13,14 @@
 		0416962E2A9CC98400F638BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0416962C2A9CC98400F638BF /* Main.storyboard */; };
 		041696302A9CC98500F638BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0416962F2A9CC98500F638BF /* Assets.xcassets */; };
 		041696332A9CC98500F638BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041696312A9CC98500F638BF /* LaunchScreen.storyboard */; };
+		04CB90D02A9CD6740075DDE7 /* WeatherAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB90CF2A9CD6740075DDE7 /* WeatherAppModel.swift */; };
+		04CB90D22A9CD6A30075DDE7 /* WeekWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB90D12A9CD6A30075DDE7 /* WeekWeatherModel.swift */; };
+		04CB90D52A9CD7070075DDE7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB90D42A9CD7070075DDE7 /* Service.swift */; };
+		04CB90D82A9CD76E0075DDE7 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB90D72A9CD76E0075DDE7 /* WeatherViewModel.swift */; };
+		04CB90DA2A9CD7AA0075DDE7 /* WeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB90D92A9CD7AA0075DDE7 /* WeekViewModel.swift */; };
+		04CB90DD2A9CD7EE0075DDE7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB90DC2A9CD7EE0075DDE7 /* MainView.swift */; };
+		04CB90DF2A9CD8510075DDE7 /* WeatherDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB90DE2A9CD8510075DDE7 /* WeatherDayView.swift */; };
+		543B5D5A1A3A963A0AC9C8BD /* Pods_Neobis_iOS_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CC6874302B3745D437AFE3 /* Pods_Neobis_iOS_WeatherApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,16 @@
 		0416962F2A9CC98500F638BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041696322A9CC98500F638BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041696342A9CC98500F638BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CB90CF2A9CD6740075DDE7 /* WeatherAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppModel.swift; sourceTree = "<group>"; };
+		04CB90D12A9CD6A30075DDE7 /* WeekWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekWeatherModel.swift; sourceTree = "<group>"; };
+		04CB90D42A9CD7070075DDE7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		04CB90D72A9CD76E0075DDE7 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		04CB90D92A9CD7AA0075DDE7 /* WeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModel.swift; sourceTree = "<group>"; };
+		04CB90DC2A9CD7EE0075DDE7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		04CB90DE2A9CD8510075DDE7 /* WeatherDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayView.swift; sourceTree = "<group>"; };
+		12CC6874302B3745D437AFE3 /* Pods_Neobis_iOS_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neobis_iOS_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7C59B0B962755E901E6A1D /* Pods-Neobis_iOS_WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_WeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_WeatherApp/Pods-Neobis_iOS_WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5068E9C08551FC32285C094D /* Pods-Neobis_iOS_WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neobis_iOS_WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-Neobis_iOS_WeatherApp/Pods-Neobis_iOS_WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543B5D5A1A3A963A0AC9C8BD /* Pods_Neobis_iOS_WeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				041696252A9CC98400F638BF /* Neobis_iOS_WeatherApp */,
 				041696242A9CC98400F638BF /* Products */,
+				2ADC89844CB28D72C235B9D8 /* Pods */,
+				8CCB55AE635D0860C6D93005 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +77,10 @@
 		041696252A9CC98400F638BF /* Neobis_iOS_WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				04CB90DB2A9CD7DF0075DDE7 /* Views */,
+				04CB90D62A9CD7570075DDE7 /* ViewModels */,
+				04CB90D32A9CD6F20075DDE7 /* Service */,
+				04CB90CE2A9CD6550075DDE7 /* Model */,
 				041696262A9CC98400F638BF /* AppDelegate.swift */,
 				041696282A9CC98400F638BF /* SceneDelegate.swift */,
 				0416962A2A9CC98400F638BF /* ViewController.swift */,
@@ -67,6 +92,58 @@
 			path = Neobis_iOS_WeatherApp;
 			sourceTree = "<group>";
 		};
+		04CB90CE2A9CD6550075DDE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04CB90CF2A9CD6740075DDE7 /* WeatherAppModel.swift */,
+				04CB90D12A9CD6A30075DDE7 /* WeekWeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04CB90D32A9CD6F20075DDE7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04CB90D42A9CD7070075DDE7 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04CB90D62A9CD7570075DDE7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04CB90D72A9CD76E0075DDE7 /* WeatherViewModel.swift */,
+				04CB90D92A9CD7AA0075DDE7 /* WeekViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		04CB90DB2A9CD7DF0075DDE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04CB90DC2A9CD7EE0075DDE7 /* MainView.swift */,
+				04CB90DE2A9CD8510075DDE7 /* WeatherDayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2ADC89844CB28D72C235B9D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C59B0B962755E901E6A1D /* Pods-Neobis_iOS_WeatherApp.debug.xcconfig */,
+				5068E9C08551FC32285C094D /* Pods-Neobis_iOS_WeatherApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8CCB55AE635D0860C6D93005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12CC6874302B3745D437AFE3 /* Pods_Neobis_iOS_WeatherApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041696372A9CC98500F638BF /* Build configuration list for PBXNativeTarget "Neobis_iOS_WeatherApp" */;
 			buildPhases = (
+				16DCDCA5B2FCDD0461D5A45A /* [CP] Check Pods Manifest.lock */,
 				0416961F2A9CC98400F638BF /* Sources */,
 				041696202A9CC98400F638BF /* Frameworks */,
 				041696212A9CC98400F638BF /* Resources */,
+				91194DC3125FF5F26934B41B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +212,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16DCDCA5B2FCDD0461D5A45A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Neobis_iOS_WeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91194DC3125FF5F26934B41B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_WeatherApp/Pods-Neobis_iOS_WeatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_WeatherApp/Pods-Neobis_iOS_WeatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neobis_iOS_WeatherApp/Pods-Neobis_iOS_WeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0416961F2A9CC98400F638BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0416962B2A9CC98400F638BF /* ViewController.swift in Sources */,
+				04CB90DD2A9CD7EE0075DDE7 /* MainView.swift in Sources */,
 				041696272A9CC98400F638BF /* AppDelegate.swift in Sources */,
+				04CB90D02A9CD6740075DDE7 /* WeatherAppModel.swift in Sources */,
+				04CB90DF2A9CD8510075DDE7 /* WeatherDayView.swift in Sources */,
+				04CB90D82A9CD76E0075DDE7 /* WeatherViewModel.swift in Sources */,
 				041696292A9CC98400F638BF /* SceneDelegate.swift in Sources */,
+				04CB90D22A9CD6A30075DDE7 /* WeekWeatherModel.swift in Sources */,
+				04CB90DA2A9CD7AA0075DDE7 /* WeekViewModel.swift in Sources */,
+				04CB90D52A9CD7070075DDE7 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		041696382A9CC98500F638BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C7C59B0B962755E901E6A1D /* Pods-Neobis_iOS_WeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +439,7 @@
 		};
 		041696392A9CC98500F638BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5068E9C08551FC32285C094D /* Pods-Neobis_iOS_WeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
