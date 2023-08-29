@@ -55,10 +55,21 @@ class ViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
-       
+        mainView.searchButton.addTarget(self, action: #selector(searchTapped), for: .touchUpInside)
     }
     
-  
+    @objc func searchTapped() {
+        let searchController = SearchController()
+        
+        searchController.onSearch = { [weak self] cityName in
+            self?.weatherViewModel.fetchWeatherData(for: cityName)
+            self?.weekWeatherViewModel.fetchWeekWeatherData(for: cityName)
+        }
+        
+        let navController = UINavigationController(rootViewController: searchController)
+        navController.modalPresentationStyle = .fullScreen
+        present(navController, animated: true, completion: nil)
+    }
     
     func updateUI() {
         guard let weatherModel = weatherModel else { return }
