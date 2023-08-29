@@ -79,18 +79,26 @@
 		041696252A9CC98400F638BF /* Neobis_iOS_WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				0438D10E2A9E386F004AB796 /* Delegate */,
 				04CB90DB2A9CD7DF0075DDE7 /* Views */,
 				04CB90D62A9CD7570075DDE7 /* ViewModels */,
 				04CB90D32A9CD6F20075DDE7 /* Service */,
 				04CB90CE2A9CD6550075DDE7 /* Model */,
-				041696262A9CC98400F638BF /* AppDelegate.swift */,
-				041696282A9CC98400F638BF /* SceneDelegate.swift */,
 				0416962C2A9CC98400F638BF /* Main.storyboard */,
 				0416962F2A9CC98500F638BF /* Assets.xcassets */,
 				041696312A9CC98500F638BF /* LaunchScreen.storyboard */,
 				041696342A9CC98500F638BF /* Info.plist */,
 			);
 			path = Neobis_iOS_WeatherApp;
+			sourceTree = "<group>";
+		};
+		0438D10E2A9E386F004AB796 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				041696262A9CC98400F638BF /* AppDelegate.swift */,
+				041696282A9CC98400F638BF /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		04CB90CE2A9CD6550075DDE7 /* Model */ = {

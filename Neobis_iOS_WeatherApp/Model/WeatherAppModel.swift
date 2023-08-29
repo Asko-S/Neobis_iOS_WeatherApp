@@ -3,7 +3,7 @@
 //  Created by Askar Soronbekov
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Welcome
 struct Welcome: Codable {
@@ -35,7 +35,7 @@ struct Coord: Codable {
 struct Main: Codable {
     let temp, feelsLike, tempMin, tempMax: Double
     let pressure, humidity: Int
-
+    
     enum CodingKeys: String, CodingKey {
         case temp
         case feelsLike = "feels_like"
