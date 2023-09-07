@@ -45,8 +45,8 @@ class WeatherViewModel: WeatherViewModelType {
     init() {
         self.weatherService = WeatherService()
         self.weekWeatherService = WeatherService()
-        fetchWeatherData(for: "London")
-        fetchWeekWeatherData(for: "London")
+        fetchWeatherData(for: "Barcelona")
+        fetchWeekWeatherData(for: "Barcelona")
     }
     
     func fetchWeatherData(for cityName: String) {
