@@ -167,47 +167,52 @@ class MainView : UIView {
         return cLabel
     }()
     
-    let viewFirst : WeatherDayView = {
+    let view1 : WeatherDayView = {
         let view = WeatherDayView()
         view.layer.cornerRadius = 20
         view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
         view.layer.borderWidth = 0.8
         
+        
         return view
     }()
     
-    let viewSecond : WeatherDayView = {
+    let view2 : WeatherDayView = {
         let view = WeatherDayView()
         view.layer.cornerRadius = 20
         view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
         view.layer.borderWidth = 0.8
         
+        
         return view
     }()
     
-    let viewThree : WeatherDayView = {
+    let view3 : WeatherDayView = {
         let view = WeatherDayView()
         view.layer.cornerRadius = 20
         view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
         view.layer.borderWidth = 0.8
         
+        
         return view
     }()
     
-    let viewFour : WeatherDayView = {
+    let view4 : WeatherDayView = {
         let view = WeatherDayView()
         view.layer.cornerRadius = 20
         view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
         view.layer.borderWidth = 0.8
         
+        
         return view
     }()
     
-    let viewFive : WeatherDayView = {
+    let view5 : WeatherDayView = {
         let view = WeatherDayView()
         view.layer.cornerRadius = 20
         view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
         view.layer.borderWidth = 0.8
+        
         
         return view
     }()
@@ -329,7 +334,7 @@ class MainView : UIView {
         addSubview(weekView)
         addSubview(weekLabel)
         addSubview(stackView)
-        [viewFirst, viewSecond, viewThree, viewFour, viewFive].forEach { stackView.addArrangedSubview($0) }
+        [view1, view2, view3, view4, view5].forEach { stackView.addArrangedSubview($0) }
         addSubview(day1Label)
         addSubview(day2Label)
         addSubview(day3Label)
@@ -375,8 +380,8 @@ class MainView : UIView {
         }
         
         tempLabel.snp.makeConstraints{ make in
-            make.center.equalTo(infoView.snp.center)
-
+            make.centerX.equalTo(infoView.snp.centerX)
+            make.centerY.equalTo(infoView.snp.centerY).offset(10)
         }
         
         windStatus.snp.makeConstraints{ make in
@@ -436,31 +441,32 @@ class MainView : UIView {
             make.height.equalTo(80)
             make.leading.equalTo(weekView.snp.leading).inset(10)
             make.trailing.equalTo(weekView.snp.trailing).inset(10)
+//            make.top.equalTo(weekLabel.snp.bottom).offset(40)
         }
         
         day1Label.snp.makeConstraints{ make in
-            make.bottom.equalTo(viewFirst.snp.top).offset(-5)
-            make.centerX.equalTo(viewFirst.snp.centerX)
+            make.bottom.equalTo(view1.snp.top).offset(-5)
+            make.centerX.equalTo(view1.snp.centerX)
         }
         
         day2Label.snp.makeConstraints{ make in
-            make.bottom.equalTo(viewSecond.snp.top).offset(-5)
-            make.centerX.equalTo(viewSecond.snp.centerX)
+            make.bottom.equalTo(view2.snp.top).offset(-5)
+            make.centerX.equalTo(view2.snp.centerX)
         }
         
         day3Label.snp.makeConstraints{ make in
-            make.bottom.equalTo(viewThree.snp.top).offset(-5)
-            make.centerX.equalTo(viewThree.snp.centerX)
+            make.bottom.equalTo(view3.snp.top).offset(-5)
+            make.centerX.equalTo(view3.snp.centerX)
         }
         
         day4Label.snp.makeConstraints{ make in
-            make.bottom.equalTo(viewFour.snp.top).offset(-5)
-            make.centerX.equalTo(viewFour.snp.centerX)
+            make.bottom.equalTo(view4.snp.top).offset(-5)
+            make.centerX.equalTo(view4.snp.centerX)
         }
         
         day5Label.snp.makeConstraints{ make in
-            make.bottom.equalTo(viewFive.snp.top).offset(-5)
-            make.centerX.equalTo(viewFive.snp.centerX)
+            make.bottom.equalTo(view5.snp.top).offset(-5)
+            make.centerX.equalTo(view5.snp.centerX)
         }
         
         developerLabel.snp.makeConstraints{ make in
