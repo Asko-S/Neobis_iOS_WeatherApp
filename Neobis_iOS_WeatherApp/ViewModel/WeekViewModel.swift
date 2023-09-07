@@ -1,9 +1,6 @@
-//
 //  WeekViewModel.swift
 //  Neobis_iOS_WeatherApp
-//
-//  Created by Askar Soronbekov 
-//
+//  Created by Askar Soronbekov
 
 import Foundation
 import UIKit

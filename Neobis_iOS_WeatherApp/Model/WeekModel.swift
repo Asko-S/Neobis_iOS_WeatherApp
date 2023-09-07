@@ -1,4 +1,4 @@
-//  WeekWeatherModel.swift
+//  WeekModel.swift
 //  Neobis_iOS_WeatherApp
 //  Created by Askar Soronbekov
 
@@ -38,7 +38,7 @@ struct weekList: Codable {
     let sys: weekSys?
     let dtTxt: String
     let rain: Rain?
-
+    
     enum CodingKeys: String, CodingKey {
         case dt, main, weather, clouds, wind, visibility, pop, sys
         case dtTxt = "dt_txt"
@@ -57,7 +57,7 @@ struct weekMainClass: Codable {
     let temp, feelsLike, tempMin, tempMax: Double
     let pressure, seaLevel, grndLevel, humidity: Int
     let tempKf: Double
-
+    
     enum CodingKeys: String, CodingKey {
         case temp
         case feelsLike = "feels_like"
@@ -105,6 +105,7 @@ enum weekMainEnum: String, Codable {
     case clear = "Clear"
     case clouds = "Clouds"
     case rain = "Rain"
+    case flash = "Flash"
 }
 
 

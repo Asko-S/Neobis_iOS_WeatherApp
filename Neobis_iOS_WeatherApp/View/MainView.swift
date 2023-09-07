@@ -8,9 +8,13 @@ import SnapKit
 
 class MainView : UIView {
     
+    // MARK: - Properties
+    
     let gradientLayer = CAGradientLayer()
     
     let sizeInfoView = 230
+    
+    // MARK: - UI Elements
     
     let searchButton : UIButton = {
         let button = UIButton()
@@ -32,7 +36,7 @@ class MainView : UIView {
         
         return cLabel
     }()
-
+    
     
     let cityLabel : UILabel = {
         let cLabel = UILabel()
@@ -69,7 +73,7 @@ class MainView : UIView {
         
         return image
     }()
-
+    
     let tempLabel : UILabel = {
         let cLabel = UILabel()
         cLabel.text = "10°C"
@@ -169,50 +173,35 @@ class MainView : UIView {
     
     let view1 : WeatherDayView = {
         let view = WeatherDayView()
-        view.layer.cornerRadius = 20
-        view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
-        view.layer.borderWidth = 0.8
-        
+        view.configure()
         
         return view
     }()
     
     let view2 : WeatherDayView = {
         let view = WeatherDayView()
-        view.layer.cornerRadius = 20
-        view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
-        view.layer.borderWidth = 0.8
-        
+        view.configure()
         
         return view
     }()
     
     let view3 : WeatherDayView = {
         let view = WeatherDayView()
-        view.layer.cornerRadius = 20
-        view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
-        view.layer.borderWidth = 0.8
-        
+        view.configure()
         
         return view
     }()
     
     let view4 : WeatherDayView = {
         let view = WeatherDayView()
-        view.layer.cornerRadius = 20
-        view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
-        view.layer.borderWidth = 0.8
-        
+        view.configure()
         
         return view
     }()
     
     let view5 : WeatherDayView = {
         let view = WeatherDayView()
-        view.layer.cornerRadius = 20
-        view.layer.borderColor = UIColor(red: 212/255, green: 212/255, blue: 212/255, alpha: 1.0).cgColor
-        view.layer.borderWidth = 0.8
-        
+        view.configure()
         
         return view
     }()
@@ -285,7 +274,7 @@ class MainView : UIView {
         
         return cLabel
     }()
-
+    
     let developerLabel : UILabel = {
         let cLabel = UILabel()
         cLabel.text = "Developed by @irwingb"
@@ -295,6 +284,10 @@ class MainView : UIView {
         return cLabel
     }()
     
+    
+    
+    // MARK: - Initialization
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -302,6 +295,8 @@ class MainView : UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Layout
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -314,6 +309,8 @@ class MainView : UIView {
         setupViews()
         setupConstraints()
     }
+    
+    // MARK: - Setup UI
     
     func setupViews(){
         addSubview(searchButton)
@@ -441,7 +438,6 @@ class MainView : UIView {
             make.height.equalTo(80)
             make.leading.equalTo(weekView.snp.leading).inset(10)
             make.trailing.equalTo(weekView.snp.trailing).inset(10)
-//            make.top.equalTo(weekLabel.snp.bottom).offset(40)
         }
         
         day1Label.snp.makeConstraints{ make in

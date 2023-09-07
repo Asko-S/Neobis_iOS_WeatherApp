@@ -1,4 +1,3 @@
-//
 //  WeatherViewModel.swift
 //  Neobis_iOS_WeatherApp
 //  Created by Askar Soronbekov
@@ -40,7 +39,7 @@ class WeatherViewModel: WeatherViewModelType {
     var updateWeek: ((weekWelcome) -> ())?
     
     lazy var didTapSearch: (() -> ())? = { [weak self] in
-//        self?.updateSearch?(self?.weatherData ?? Weather(main: Main(temp: 2.0)))
+        
     }
     
     init() {

@@ -1,9 +1,7 @@
-//
 //  SceneDelegate.swift
 //  Neobis_iOS_WeatherApp
-//
 //  Created by Askar Soronbekov
-//
+
 
 import UIKit
 

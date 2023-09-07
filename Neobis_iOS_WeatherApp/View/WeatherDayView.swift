@@ -8,6 +8,8 @@ import SnapKit
 
 class WeatherDayView: UIView {
     
+    // MARK: - Properties
+    
     let tempLabel : UILabel = {
         let tempLabel = UILabel()
         tempLabel.text = "10°C"
@@ -22,6 +24,8 @@ class WeatherDayView: UIView {
         return image
     }()
     
+    // MARK: - Initializers
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -30,6 +34,8 @@ class WeatherDayView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Private Method
     
     private func setupView() {
         addSubview(tempLabel)
